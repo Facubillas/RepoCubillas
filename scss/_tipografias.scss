@@ -1,0 +1,270 @@
+// TIPOGRAFIAS //
+// cargar todas las fuentes //
+
+/* ------------------------------ INDEX ------------------------------ */
+/* ------------------------------ INDEX ------------------------------ */
+
+.navegacion{
+    .menu{
+        font-family: 'Montserrat', sans-serif;
+        font-size: small; /* -- tamaño del Link --*/
+    }
+}
+
+.titulo_hola{
+    position: relative;
+    z-index: 100px;
+    margin-top: 0px;
+    margin-bottom: 0;
+    color: transparent;
+}
+
+
+/* --------- contenido_perfil INDEX --------- */
+
+.titulo_perfil_index{ /* ----- titulo -----  */
+    font-family: 'Montserrat', sans-serif;
+    font-size: $textSizeB;
+    text-align: center;
+    color: $Color4A;
+}
+
+.parrafo_perfil_resumen{ /* ----- parrafo ----- */
+    font-family: 'Montserrat', sans-serif;
+    font-size: $textSizeA;
+    margin-bottom: 15px;
+    padding: 20px;
+    color: $ColorN;
+    text-align: center;
+}
+
+/* --------- contenido_habilidades INDEX --------- */
+
+.titulo_secundario{  /* ----- titulo -----  */
+    font-family: 'Montserrat', sans-serif;
+    font-size: $textSizeB; /*2rem*/
+    text-align: center;
+    color: $Color3M;
+}
+
+.icono_titulo{ /* ----- titulo iconos-----  */
+    font-family: 'Montserrat', sans-serif;
+    font-size: $textSize3;  /*25px*/
+    text-align: center;
+    color: $Color1N;
+}
+
+.parrafo_habilidades{
+    font-family: 'Montserrat', sans-serif;
+    font-size: $textSize1; /*18px*/
+    text-align: center;
+    color: $Color1N;
+}
+
+.icono_g{
+    width: 200px;
+    height: 150px;
+    padding-top: 50px;
+    background-color: $backGround1;
+    color: $Color1N; 
+    font-size: 50px;
+    border-radius: 50px; /* angulos */
+}
+
+  .icono_parrafo{ /* ----- parrafo iconos-----  */
+    font-size: $textSize0; /*15px*/
+    text-align: center;
+    color: $Color1N;
+}
+
+.icono_g:hover {
+    color: $Color4A;
+}
+
+
+/* --------- contenido_marcas INDEX --------- */
+
+.talle{
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+}
+
+.titulo_remera{
+    font-family: 'Montserrat', sans-serif;
+    font-size: $textSize3;  /*25px*/
+    text-align: center;
+    color: $Color1N;
+}
+
+.parrafo_remera{
+    font-family: 'Montserrat', sans-serif;
+    font-size: $textSize1;  /*18px*/
+    text-align: center;
+    color: $ColorN;
+}
+
+
+/* --------- contenido_despegar INDEX --------- */
+
+.titulo_despegar{
+    font-family: 'Montserrat', sans-serif;
+    font-size: $textSizeB; /*2rem*/
+    color: $ColorB;
+}
+
+.despega_parrafo{
+    font-family: 'Montserrat', sans-serif;
+    color: $ColorB; 
+    font-size: $textSize1; /*18px*/
+}
+
+/* ------------------------------ PERFIL ------------------------------ */
+/* ------------------------------ PERFIL ------------------------------ */
+
+.titulo_perfil{   /* ---- Facundo ---- */
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: xx-large;
+    margin: 10px;
+    padding: 10px;
+    color: $Color1N;
+}
+
+  .titulo_perfil_subtitulo{  /* ---- Quien Soy? ---- */
+    font-family: 'Montserrat', sans-serif;
+    font-size: $textSize2; /*20px*/
+    color: #ba1818;
+    margin-top: 1%;
+    padding: 10px;
+}
+
+  .contenido_perfil{   /* ---- titulo y parrafo ---- */
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+    font-size: $textSize1; /*20px*/
+}
+
+  .parrafo_perfil{ /* ---- parrafo ---- */
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    color: $Color1N;
+    margin: 5px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+/* ------------------------------ SERVICIOS ------------------------------ */
+/* ------------------------------ SERVICIOS ------------------------------ */
+
+.titulo_principal_servicios{
+    font-family: 'Montserrat', sans-serif;
+    font-size: $textSize3;  /*25px*/
+    text-align: center;
+    color: $Color4A;
+}
+
+.titulo_servicio{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: $textSizeA; /*1rem*/
+}
+
+.parrafo_servicio{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: 15px;
+    margin-right: 5px;
+    font-style: italic;
+    font-size: $textSize0; /*15px*/
+}
+
+/* ------------------------------ PRODUCTOS ------------------------------ */
+/* ------------------------------ PRODUCTOS ------------------------------ */
+
+.titulos_principal_productos{
+    font-family: 'Montserrat', sans-serif;
+    font-size: $textSize3;  /*25px*/
+    text-align: center;
+    color: $Color3M;
+}
+
+.titulos_secundario_productos{
+    font-family: 'Montserrat', sans-serif;
+    font-size: $textSize1; /*18px*/
+    color: $Color1N;
+}
+
+.titulo_productos_subtitulo {
+    background-color: $Color3M;
+    font-size: x-large;
+    margin: 10px;
+    padding: 10px; 
+}
+
+.titulo_carta{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.p_carta{
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+}
+
+.btn-primary{
+    background-color: orange;
+    box-shadow: 0 -5 5px gray;
+    text-align: center;
+}
+
+.btn-primary:hover{
+    background-color: $Color3M;
+}
+
+
+/* ------------------------------ GALERIA ------------------------------ */
+/* ------------------------------ GALERIA ------------------------------ */
+
+.titulo_galeria{
+    color: transparent;
+}
+
+/* -------- bucle -------- */
+@for $i from 1 through 9 {
+    .img#{$i} {
+        box-shadow: 0 0 5px $ColorN; width: 70%; height: auto;
+        
+    }
+}
+
+/* ------------------------------ CONTACTOS ------------------------------ */
+/* ------------------------------ CONTACTOS ------------------------------ */
+
+.titulo_principal_contacto{
+    color: transparent;
+}
+
+.text_contacto_p{
+    font-size: x-large;
+    text-shadow: 0 0 15px #adadad;
+}
+
+.text_contacto{
+    font-size: large;
+}
+
+/* ---------------------------- ERROR -------------------------------- */
+/* ---------------------------- ERROR -------------------------------- */
+
+.titulo_contacto_error{
+    font-family: 'Montserrat', sans-serif;
+    font-size: larger;
+    text-align: center;
+}
+
+.footer_parrafo_error{
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+}

@@ -1,0 +1,347 @@
+// Variables //
+
+$backGround1: transparent;
+$backGround2: orange;
+
+$Color1N: #191919;
+$Color2G: #dcdcdc;
+$Color3M: #aa8d4d;
+$Color4A: #103c8d;
+
+$ColorB: #ffff;
+$ColorN: #000000;
+
+$textSize0: 15px;
+$textSize1: 18px;
+$textSize2: 20px;
+$textSize3: 25px;
+
+$textSizeA: 1rem;
+$textSizeB: 2rem;
+
+
+// Imports //
+@import "_animaciones";
+@import "_base";
+@import "_tipografias";
+@import "_utilidades";   //
+
+@import "_bot";
+
+@import "_footer";
+@import "_forms";  //
+@import "_grid";
+@import "_header";
+@import "_navbar";
+
+@import "_funciones";  //
+@import "_mixins";     //
+
+@import "_bootstrap";
+@import "_jquery";
+
+
+/* ---------------------------- INDEX -------------------------------- */
+/* ---------------------------- INDEX -------------------------------- */
+
+.container{  
+    width: 100vh;  
+    max-width: 1200px;    
+    padding: 50px, 0;  
+    margin: 30px 0;
+    overflow: hidden;
+}
+
+.contenedor_index{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $ColorB;
+    /* width: 100%; */
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+}
+
+/* --------- main INDEX --------- */
+
+.main_index{
+    /* max-width: 1300px;*/ 
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    padding-top: 0;
+    position: relative;
+    margin: 0 0%;
+    width: 90%;
+}
+
+.carousel{
+    box-shadow: 0 0 20px $Color1N;
+    margin-left: 20px;
+    margin-top: 0;
+}
+
+/*------------ UN POCO SOBRE MI ------------*/
+
+/* ---- contendio_perfil INDEX ---- */
+
+.hero{
+    height: 100vh;
+    min-width: 400px;
+    position: relative; 
+    padding: 0px;
+    z-index: 1; 
+    margin-right: 0px;
+    margin-top: 5%;
+}
+
+.hero::after{ 
+    content: "";
+    display: block;
+    position: absolute;
+    height: 400px; 
+    width: 112%;
+    bottom: 0;
+    background-color: $Color2G; 
+    z-index: -1;
+    clip-path: polygon(0 100%, 100% 100%, 100% 0%);
+}
+
+  .contenido_perfil_index{  /* ----- Bloque Perfil -----  */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 5px;
+    padding: 50px 0; 
+    margin: 100px 100px;
+    margin-top: 5%;
+}
+
+  .imagen_facu_perfil_resumen{ /* ----- imagen -----  */
+    border-radius: 25%;
+    object-fit: cover;
+    box-shadow: 0 0 10px black;
+}
+
+
+/* --------- contenido_habilidades INDEX --------- */
+
+.contenido_habilidades_index{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 2px solid $Color3M;
+    background-color: $Color2G;
+    margin: 0 0;
+    padding: 0 0%;
+    width: 112%;
+    position: relative;
+    /* max-width: 1300px; */
+}
+
+.container_hab{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 5%;
+    
+}
+
+.conjunto_iconos{
+    display: flex;
+    text-align: center;
+    margin: auto;
+    
+}
+
+.icono_grafico{
+    margin: 20px;
+    background-color: $ColorB;
+    padding: 15px;
+    border-top: 5px solid $Color4A;
+    box-shadow: 0 0 5px $ColorN;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* --------- contenido_marcas INDEX --------- */
+
+.contenido_marcas_index{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-bottom: 2px solid $Color3M;
+    background-color: $backGround1;
+    width: 112%;
+}
+
+.caritas{
+    position: relative;
+    margin-top: -100px;
+    margin-left: 150px;
+    margin-bottom: 50px;
+}
+
+.section2_index{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    background-color: $backGround1;
+    
+    margin-left: 50px;
+}
+
+.align-items-center{
+    margin-left: 10%;
+    
+}
+
+.rem{
+    box-shadow: 0 0 3px black;
+}
+
+/* --------- contenido_despegar INDEX --------- */
+
+.contenido_despegar{
+    margin-bottom: 50px;
+}
+
+
+
+/* -------------------------- PERFIL -------------------------- */
+/* -------------------------- PERFIL -------------------------- */
+
+.seccion_perfil{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    margin: 0 auto;
+    background-color: $backGround1;
+}
+
+  .foto_perfil img{ /* ---- Foto ---- */
+    display: block;
+    margin: auto;
+    position: relative;
+    background-color: transparent;
+    border-radius: 1000%;
+    border: 10px;
+    box-shadow: 0 0 10px black;
+}
+
+/* -------------------------- SERVICIO -------------------------- */
+/* -------------------------- SERVICIO -------------------------- */
+
+.servicio_1y2{
+    display: flex;
+}
+
+.servicio_3y4{
+    display: flex;
+}
+
+.contenido_servicio{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 100px;
+    position: relative;
+}
+
+.servicio_individual{
+    display: flex;
+    margin: 30px;
+}
+
+.contendio_parrafo_servicio{
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    background-color: $Color2G;
+    box-shadow: 0 0 5px #696969;
+    padding: 2%;
+}
+
+.foto_servicios{
+    width: 200px;
+    margin: 20px;
+    transition: all 1s;
+    filter: grayscale(100%);
+    
+}
+
+.foto_servicios img{
+    border-radius: 10%;
+}
+
+.foto_servicios:hover {
+    filter: grayscale(0%);
+}
+
+
+/* -------------------------- PRODUCTOS -------------------------- */
+/* -------------------------- PRODUCTOS -------------------------- */
+
+/* -------- cajas seccion (grande) -------- */
+
+.seccion_productos{
+    display: flex; /* --uno al lado del otro-- */
+    flex-direction: column;
+    gap: 30px;
+    margin: 0 auto;
+}
+
+/* ------ cajas contendio (media) ------ */
+
+.caja_productos{
+    display: flex; /* --uno al lado del otro-- */
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.caja_productos_solo{
+    display: flex;
+    justify-content: center;
+}
+
+/* -------- cajas indiv -------- */
+
+.caja_p{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 10px;
+}
+
+/* ---------------------- CONTACTOS ---------------------- */
+/* ---------------------- CONTACTOS ---------------------- */
+
+.contenedor_contacto{
+    background-image: url(../imagenes/imagenes_index/foto_facu_fondoo.png);
+    background-repeat: no-repeat;
+    
+}
+
+.needs-validation{
+    margin: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 50px;
+}
+
+
+/* ---------------------------- ERROR -------------------------------- */
+/* ---------------------------- ERROR -------------------------------- */
+
+.contenedor_error{
+    background-image: url(../imagenes/imagenes_error/error404.png);
+    background-repeat: no-repeat;
+}
