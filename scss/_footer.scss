@@ -34,19 +34,21 @@
     margin-bottom: 30px;
 }
 
-.titulo_contacto{
-    font-family: 'Montserrat', sans-serif;
-    font-size: $textSize2; /*20px*/
-    color: $ColorN;
-}
+.footer_texts{
+    .titulo_contacto{
+        font-family: 'Montserrat', sans-serif;
+        font-size: $textSize2; /*20px*/
+        color: $ColorN;
+    }
+} 
 
-.footer_parrafo{
-    font-family: 'Montserrat', sans-serif;
-    font-size: $textSize2; /*20px*/
-    margin: 20px 0;
-    font-weight: 500;
-    color: $Color1N;
-}
+.footer_texts{
+    .footer_parrafo{
+        font-family: 'Montserrat', sans-serif;
+        font-size: $textSize2; /*20px*/
+        color: $ColorN;
+    }
+} 
 
 /* -------- Redes Sociales INDEX -------- */
 
@@ -81,7 +83,7 @@
     margin-bottom: 50px;
 }
 
-.footer_picture img{
+.footer_picture .footer_img{
     width: 60%;
 }
 

@@ -49,107 +49,126 @@
     grid-column: 3/-1;
 }
 
-
 /* ------------------------------ GALERIA ------------------------------ */
 /* ------------------------------ GALERIA ------------------------------ */
 
-/* ---- Grids general ---- */ 
+main{
+    .titulo_galeria{
+        color: $backGround1;
+    }
+    .contenedor_galeria {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas:
+        "soymascota nattybrit weirdo"
+        "gameobert quimey soymascota2"
+        "weirdo2 soytaza gino";
+        .imagen_galeria{
+            display: block;
+            width: 300px;
+            height: 300px;
+        }
+        .weirdo { grid-area: weirdo; 
+            background-image: url(../imagenes/imagenes_galeria/weirdo.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        
+        .weirdo2 { grid-area: weirdo2; 
+            background-image: url(../imagenes/imagenes_galeria/weirdo2.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        
+        .nattybrit { grid-area: nattybrit; 
+            background-image: url(../imagenes/imagenes_galeria/nattybrit.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        
+        .soytaza { grid-area: soytaza; 
+            background-image: url(../imagenes/imagenes_galeria/soytaza.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        
+        .soymascota { grid-area: soymascota; 
+            background-image: url(../imagenes/imagenes_galeria/soymascota.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        
+        .soymascota2 { grid-area: soymascota2; 
+            background-image: url(../imagenes/imagenes_galeria/soymascota2.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        
+        .quimey { grid-area: quimey; 
+            background-image: url(../imagenes/imagenes_galeria/quimey.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        
+        .gameobert { grid-area: gameobert; 
+            background-image: url(../imagenes/imagenes_galeria/gameobert.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        
+        .gino { grid-area: gino; 
+            background-image: url(../imagenes/imagenes_galeria/gino.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
 
-.contenedor_galeria_todo {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.3fr 5fr 0.7fr;
-    grid-auto-columns: 1fr;
-    gap: 10px 10px;
-    grid-auto-flow: row;
-    grid-template-areas:
-    "header_galeria header_galeria header_galeria"
-    "contenedor_galeria contenedor_galeria contenedor_galeria"
-    "footer_galeria footer_galeria footer_galeria";
-    height: 100%;
-    margin: auto;
-    justify-content: center;
+        .imagen_galeria {
+            transition: all 1s;
+        }
+        
+        .imagen_galeria:hover {
+            transform: scale(1.1,1.1);
+        }
+          /* ---- Grids END ---- */
+    }
+
+    @media screen and (max-width:400px){
+        .contenedor_galeria{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(9,1fr);
+            grid-auto-columns: 1fr;
+            gap: 20px 10px; /* ---- gap, espacio entre filas y columnas ---- */
+            grid-auto-flow: row;
+            grid-template-areas:
+            "soymascota" 
+            "nattybrit" 
+            "weirdo"
+            "gameobert" 
+            "quimey" 
+            "soymascota2"
+            "weirdo2"
+            "soytaza" 
+            "gino";
+            height: 50%;
+            justify-content: center;
+            padding: 20px; /* ---- para que se separen un poco ---- */
+        
+            .imagen_galeria{
+                display: block;
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
 }
-
-.header_galeria { grid-area: header_galeria; }
-
-.contenedor_galeria { grid-area: contenedor_galeria; }
-
-.footer_galeria { grid-area: footer_galeria; }
-
-
-/* ---- Grids fotos ---- */
-
-.contenedor_galeria {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-auto-columns: 1fr;
-    gap: 20px 10px; /* ---- gap, espacio entre filas y columnas ---- */
-    grid-auto-flow: row;
-    grid-template-areas:
-    "soymascota nattybrit weirdo"
-    "gameobert quimey soymascota2"
-    "weirdo2 soytaza gino";
-    height: 100%;
-    justify-content: center;
-    padding: 20px; /* ---- para que se separen un poco ---- */
-    
-}
-
-.weirdo { grid-area: weirdo; 
-    background-image: url(../imagenes/imagenes_galeria/weirdo.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.weirdo2 { grid-area: weirdo2; 
-    background-image: url(../imagenes/imagenes_galeria/weirdo2.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.nattybrit { grid-area: nattybrit; 
-    background-image: url(../imagenes/imagenes_galeria/nattybrit.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.soytaza { grid-area: soytaza; 
-    background-image: url(../imagenes/imagenes_galeria/soytaza.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.soymascota { grid-area: soymascota; 
-    background-image: url(../imagenes/imagenes_galeria/soymascota.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.soymascota2 { grid-area: soymascota2; 
-    background-image: url(../imagenes/imagenes_galeria/soymascota2.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.quimey { grid-area: quimey; 
-    background-image: url(../imagenes/imagenes_galeria/quimey.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.gameobert { grid-area: gameobert; 
-    background-image: url(../imagenes/imagenes_galeria/gameobert.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.gino { grid-area: gino; 
-    background-image: url(../imagenes/imagenes_galeria/gino.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-  /* ---- Grids END ---- */
-

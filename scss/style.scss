@@ -24,21 +24,20 @@ $textSizeB: 2rem;
 @import "_animaciones";
 @import "_base";
 @import "_tipografias";
-@import "_utilidades";   //
-
 @import "_bot";
-
 @import "_footer";
-@import "_forms";  //
 @import "_grid";
 @import "_header";
 @import "_navbar";
-
-@import "_funciones";  //
-@import "_mixins";     //
-
-@import "_bootstrap";
 @import "_jquery";
+
+
+/* ---------------------------- MENU -------------------------------- */
+/* ---------------------------- MENU -------------------------------- */
+
+.navegacion ul li a{
+    transition: all 0.3s linear; 
+}
 
 
 /* ---------------------------- INDEX -------------------------------- */
@@ -89,24 +88,24 @@ $textSizeB: 2rem;
 .hero{
     height: 100vh;
     min-width: 400px;
-    position: relative; 
+    // position: relative; 
     padding: 0px;
-    z-index: 1; 
+    // z-index: 1; 
     margin-right: 0px;
     margin-top: 5%;
 }
 
-.hero::after{ 
-    content: "";
-    display: block;
-    position: absolute;
-    height: 400px; 
-    width: 112%;
-    bottom: 0;
-    background-color: $Color2G; 
-    z-index: -1;
-    clip-path: polygon(0 100%, 100% 100%, 100% 0%);
-}
+// .hero::after{ 
+//     content: "";
+//     display: block;
+//     position: absolute;
+//     height: 400px; 
+//     width: 112%;
+//     bottom: 0;
+//     background-color: $Color2G; 
+//     // z-index: -1;
+//     clip-path: polygon(0 100%, 100% 100%, 100% 0%);
+// }
 
   .contenido_perfil_index{  /* ----- Bloque Perfil -----  */
     display: grid;
@@ -119,7 +118,7 @@ $textSizeB: 2rem;
 }
 
   .imagen_facu_perfil_resumen{ /* ----- imagen -----  */
-    border-radius: 25%;
+    border-radius: 15%;
     object-fit: cover;
     box-shadow: 0 0 10px black;
 }
@@ -133,11 +132,11 @@ $textSizeB: 2rem;
     justify-content: center;
     text-align: center;
     border-bottom: 2px solid $Color3M;
-    background-color: $Color2G;
-    margin: 0 0;
+    background-color:$backGround1;
+    margin: 0 10px;
     padding: 0 0%;
-    width: 112%;
-    position: relative;
+    width: 100%;
+    // position: relative;
     /* max-width: 1300px; */
 }
 
@@ -176,7 +175,7 @@ $textSizeB: 2rem;
     text-align: center;
     border-bottom: 2px solid $Color3M;
     background-color: $backGround1;
-    width: 112%;
+    width: 100%;
 }
 
 .caritas{
@@ -193,7 +192,7 @@ $textSizeB: 2rem;
     
     background-color: $backGround1;
     
-    margin-left: 50px;
+    margin-left: 5%;
 }
 
 .align-items-center{
@@ -240,37 +239,39 @@ $textSizeB: 2rem;
 
 .servicio_1y2{
     display: flex;
+    margin-bottom: 5%;
 }
 
 .servicio_3y4{
     display: flex;
 }
 
-.contenido_servicio{
+.contenido_servicio_todos{
     display: flex;
-    margin-top: 30px;
-    margin-bottom: 100px;
-    margin-right: 150px;
-    margin-left: 100px;
-    position: relative;
+    margin-top: 2%;
+    margin-bottom: 50%;
+    margin-right: 5%;
+    margin-left: 5%;
+    position: sticky;
 }
 
 .servicio_individual{
     display: flex;
-    margin: 30px;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-bottom: 0;
 }
 
 .contendio_parrafo_servicio{
     display: flex;
     flex-direction: column;
-    margin-left: 25px;
     background-color: $Color2G;
     box-shadow: 0 0 5px #696969;
-    padding: 2%;
+    padding: 3%;
 }
 
 .foto_servicios{
-    width: 200px;
+    // width: 200px;
     margin: 20px;
     transition: all 1s;
     filter: grayscale(100%);
@@ -279,12 +280,16 @@ $textSizeB: 2rem;
 
 .foto_servicios img{
     border-radius: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
 }
 
 .foto_servicios:hover {
     filter: grayscale(0%);
 }
-
 
 /* -------------------------- PRODUCTOS -------------------------- */
 /* -------------------------- PRODUCTOS -------------------------- */

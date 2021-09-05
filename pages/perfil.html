@@ -10,6 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
 <!-- ICONOS -->
     <script src="https://kit.fontawesome.com/d0c8f0f6a9.js" crossorigin="anonymous"></script>
+<!-- CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <!-- IMAGEN .ICO -->
     <link rel="shortcut icon" href="imagenes/ImagenPequeña_1 (2).ico">
 <!-- CSS -->
@@ -20,33 +23,27 @@
     <title> Perfil de Facubillas - CUBIX </title>
 </head>
 
-<!------------------------- MENU ------------------------->
 <body>
-    <div class="contenedor_perfil">
+        <!---------- MENU ---------->
         <header class="header_perfil">
-            <a href="../index.html"> 
-                <img src="../imagenes/LogoCubixPNG.PNG" width="150" height="150" alt="Logo Cubix" title="Hecho por @Facubillas"></a>
+            <a href="../index.html"><img src="../imagenes/LogoCubixPNG.PNG" width="150" height="150" alt="Logo Cubix" title="Hecho por @Facubillas"></a>
+            <input type="checkbox" name="menu" id="menu" class="menuLine" value="menu" tabindex="1">
+            <label tabindex="2" for="menu" class="btnMenu" >              
+                <span class="linea"></span>
+                <span class="linea"></span>
+                <span class="linea"></span>
+            </label>
             <nav class="navegacion">
                 <ul class="menu">
-                    <li>
-                        <a href="perfil.html" class="activo">MI PERFIL</a> 
-                    </li> 
-                    <li>
-                        <a href="servicios.html" class="activo">SERVICIOS</a>
-                    </li> 
-                    <li>
-                        <a href="productos.html" class="activo">PRODUCTOS</a>
-                    </li> 
-                    <li>
-                        <a href="galeria.html" class="activo">GALERIA</a>
-                    </li> 
-                    <li>
-                        <a href="contactos.html" class="activo">CONTACTOS</a>
-                    </li> 
+                    <li><a href="perfil.html" class="activo">MI PERFIL</a> </li> 
+                    <li><a href="servicios.html" class="activo">SERVICIOS</a></li> 
+                    <li><a href="productos.html" class="activo">PRODUCTOS</a></li> 
+                    <li><a href="galeria.html" class="activo">GALERIA</a></li> 
+                    <li><a href="contactos.html" class="activo">CONTACTOS</a></li> 
                 </ul> 
             </nav>
         </header> 
-        <!------------------------- fin MENU ------------------------->
+        <!---------- fin MENU ---------->
     
         <!------------------------- PERFIL ------------------------->
         <section class="seccion_perfil">
@@ -57,7 +54,7 @@
                 <h1 class="titulo_perfil">- FACUNDO CUBILLAS -</h1>
                 <div class="contenido_perfil"> 
                     <h2 class="titulo_perfil_subtitulo">Quien soy?</h2>
-                    <p class="parrafo_perfil">Lorem ipsum dolor sit, amet consectetur adipisicin. Saepe, ea? Neque, dolor. Officiis maxime aperiam ea, laudantium illum nobis harum est in, cum eum quia ad recusandae rem natus et!Lorem ipsum dolor sit, amet consectetur adipisicin. Saepe, ea? Neque, dolor. Officiis maxime aperiam ea, laudantium illum nobis harum est in, cum eum quia ad recusandae rem natus et!Lorem ipsum dolor sit, amet consectetur adipisicin. Saepe, ea? Neque, dolor. Officiis maxime aperiam ea, laudantium illum nobis harum est in, cum eum quia ad recusandae rem natus et!Lorem ipsum dolor sit, amet consectetur adipisit!</p>
+                    <p class="parrafo_perfil">Soy un simple mortal, fanático de la estructura y la simplicidad tanto en el diseño como en el código; La organización y la coherencia son muy importantes para mí... Creativo con un dominio integral del Diseño, la Imagen y el Branding. Creacion y desarrollo de marcas, campañas publicitarias, identidad corporativa y comunicaciones digitales para productos, servicios, empresas e instituciones a nivel nacional e internacional.  </p>
                 </div>
             </div> 
             <!------------------------- fin PERFIL ------------------------->
@@ -93,7 +90,14 @@
             </div>
         </footer>
         <!------------ fin Footer PERFIL ------------>
-    </div>
+    
+<!-- Scripts JS para que funcione componentes de BS -->
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
     
 </body>
 </html>

@@ -2,141 +2,232 @@
 
 /* ------------------------------ INDEX ------------------------------ */
 /* ------------------------------ INDEX ------------------------------ */
-
-@media screen and (max-width:768px){ /* -- Tablet 768 -- */
-
-    .menu li{
-        display: inline-block;
-    }
-
-    .carrousel_index{
-        padding: 0 0;
-    }
-
+/*------------ UN POCO SOBRE MI ------------*/
+@media screen and (max-width:400px){
     .hero{
-        margin: 20px;
-        margin-left: 50px;
-    }
-
-    .contenido_perfil_index{
-        grid-template-columns: 1fr;
-        grid-template-rows: max-content;
-        place-items: center;
-        gap: 10px;
-    }
-
-    .titulo_perfil_index{
-        font-size: 1rem;
-        color: #191919;
-    }
-
-    .botonCompra{
-        margin-left: 40px;
-    }
-
-    /*-- Marcas MOBILIE --*/ 
-
-    .contenido_marcas_index{
-        background-color: #dcdcdc;
-    }
-    
-
-    .section2_index{
-        display: flex;
-        flex-direction: column;
-        margin-left: 200px;
-    }
-
-    .talle{
-        font-size: small;
-        margin-top: 30px;
-    }
-
-    .titulo_remera{
-        font-size: 20px;
-        text-align: center;
-        color: #191919;
-    }
-
-    .parrafo_remera{
-        font-size: 15px;
-        text-align: center;
-        color: #191919;
-    }
-
-    .nav-tabs{
-        margin-top: 100px;
-    }
-
-    /*-- footer MOBILIE --*/ 
-
-    .footer_index{
-        justify-content: space-around;
+        margin-bottom: 60%;
+        .contenido_perfil_index{
+            display: flex;
+            flex-direction: column;
+            .imagen_facu_perfil_resumen{
+                width: 200px;
+                height: auto;
+                margin-bottom: 10%;
+            }
+            .titulo_perfil_index{ /* ----- titulo -----  */
+                font-size: $textSizeB;
+                color: red;
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+            .parrafo_perfil_resumen{ /* ----- parrafo ----- */
+                font-size: $textSizeA;
+                color: $ColorN;
+                // margin-left: 5%;
+                // margin-right: 5%;
+            }
+            .botonQuiero {  /* -- caja -- */
+                padding: 5px 5px; 
+                margin-left: 20px;
+            }
+        }
     }
 }
 
-  @media only screen and (max-width:375px){ /* -- Cel 375 -- */
+/* --------- contenido_habilidades INDEX --------- */
 
-    /*-- Habilidades MOBILIE --*/ 
+@media screen and (max-width:400px){
+    .contenido_habilidades_index{
+        background: red;
+        .container_hab{
+            .conjunto_iconos{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}
 
-    .conjunto_iconos{
-        /* Flex */
+
+/* --------- contenido_marcas INDEX --------- */
+
+@media screen and (max-width:400px){
+    .contenido_marcas_index{
+        .section2_index{
+            .container_r{
+                .caritas{
+                    position: relative;
+                    margin-top: 0px;
+                    margin-left: 50px;
+                    margin-bottom: 20px;
+                }
+                .col-lg-8{
+                    margin-top: 10%;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+}
+
+/* --------- contenido_despegar INDEX --------- */
+
+@media screen and (max-width:400px){
+    .contenido_despegar{
+        display: flex;
+        flex-direction: column;
+        .despega_img{
+        width: 150%;
+        height: auto;
+        }
+    }
+}
+
+/* --------- Footer INDEX --------- */
+
+@media screen and (max-width:400px){
+    .footer_index{
+        // background-color: $backGround1;
+        .footer_container{
+            .footer_contacto{
+                display: flex;
+                flex-direction: column;
+                margin-top: 5%;
+                .footer_texts{
+                    .titulo_contacto{
+                        margin-top: 10%;
+                    }
+                    .footer_parrafo{
+                        margin-top: 10%;
+                    }
+                    .footer_social{
+                        display: flex;
+                        margin-left: 30px;
+                        .footer_icon{
+                        margin-bottom: 3px;
+                        }
+                    }
+                    .footer_picture{
+                        .footer_img{
+                            width: 100%;
+                            margin-left: 50%;
+                        }
+                    }
+                }
+            }
+            .footer_copyright{
+                font-size: xx-small;
+            }
+        }
+    }
+}
+
+/* ------------------------------ PERFIL ------------------------------ */
+/* ------------------------------ PERFIL ------------------------------ */
+
+@media screen and (max-width:400px){
+    .seccion_perfil{
+        .foto_perfil img{
+            width: 150px;
+            height: 150px;
+        }
+        .contenido_texto_perfil{
+            .titulo_perfil{
+                font-size: $textSize1;
+            }
+            .titulo_perfil_subtitulo{
+                font-size: $textSize0;
+            }
+            .parrafo_perfil{
+                font-size: $textSizeA;
+                padding-right: 5%;
+                padding-left: 5%;
+            }
+        }
+    }
+}
+
+/* --------- footer PERFIL --------- */
+
+@media screen and (max-width:400px){
+    .nav_perfil{
+        .redes_sociales_perfil{
+            .icono_whatsapp_perfil{
+                font-size: 15px;
+                width: 10px;
+            }
+            .icono_youtube_perfil{
+                font-size: 15px;
+                width: 10px;
+            }
+            .icono_instagram_perfil{
+                font-size: 15px;
+                width: 10px;
+            }
+            .icono_mail_perfil{
+                font-size: 15px;
+                width: 10px;
+            }
+        }
+    }
+    .footer_perfil{
+        div .footer_copyright_perfil{
+            font-size: xx-small;
+        }
+    }
+}
+
+/* -------------------------- SERVICIO -------------------------- */
+/* -------------------------- SERVICIO -------------------------- */
+
+@media screen and (max-width:400px){
+    .titulo_principal_servicios{
+        font-size: $textSize1;
+        color: $Color4A;
+    }
+    .contenido_servicio_todos{
         display: flex;
         flex-direction: column;
         
-    }
-
-    .container_hab{
-        justify-content: center;
+        .servicio_1y2{
+            display: flex;
+            flex-direction: column;
+            .servicio_individual{
+                .foto_servicios img{
+                    width: 50%;
+                }
+                .contendio_parrafo_servicio{
+                    // margin left: 1%;
+                    // margin-right: 1%;
+                    .titulo_servicio{
+                    font-size: $textSize0;
+                    color: brown;
+                    }
+                    .parrafo_servicio{
+                    font-size: 10px;
+                    }
+                }
+            }
         }
-    
-    /*-- Marcas MOBILIE --*/ 
-
-    .section2_index{
-        display: flex;
-        flex-direction: column;
-
-        margin-left: 400px;
-    }
-
-    .talle{
-        font-size: small;
-        margin-top: 30px;
-    }
-
-    .titulo_remera{
-        font-size: 20px;
-        text-align: center;
-        color: red;
-    }
-
-    .parrafo_remera{
-        font-size: 15px;
-        text-align: center;
-        color: $Color1N;
-    }
-
-    .nav-tabs{
-        margin-top: 100px;
-    }
-
-    /*-- Despegar MOBILIE --*/
-
-    .despega_parrafo{
-        font-size: 18px;
-        color: tomato;
-    }
-
-}
-
-
-/* ------------------------------ PRODUCTOS ------------------------------ */
-/* ------------------------------ PRODUCTOS ------------------------------ */
-
-@media screen and (max-widht: 600px) {
-    .caja_productos_solo{
-        display: flex;
-        flex-direction: column;
+        .servicio_3y4{
+            display: flex;
+            flex-direction: column;
+            .servicio_individual{
+                .foto_servicios img{
+                    width: 50%;
+                }
+                .contendio_parrafo_servicio{
+                    // margin left: 1%;
+                    // margin-right: 1%;
+                    .titulo_servicio{
+                    font-size: $textSize0;
+                    color: brown;
+                    }
+                    .parrafo_servicio{
+                    font-size: 10px;
+                    }
+                }
+            }
+        }
     }
 }
-
