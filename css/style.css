@@ -2269,41 +2269,53 @@ li a:hover {
 /* -------------------------- SERVICIO -------------------------- */
 /* -------------------------- SERVICIO -------------------------- */
 @media screen and (max-width: 400px) {
-  .titulo_principal_servicios {
-    font-size: 18px;
-    color: #103c8d;
+  .footer_servicio div .footer_copyright_perfil {
+    font-size: xx-small;
   }
-  .contenido_servicio_todos {
+}
+
+/* -------------------------- PRODUCTOS -------------------------- */
+/* -------------------------- PRODUCTOS -------------------------- */
+@media screen and (max-width: 400px) {
+  .contenedor_productos .seccion_productos .caja_productos .caja_productos_solo {
     display: flex;
     flex-direction: column;
   }
-  .contenido_servicio_todos .servicio_1y2 {
+  .footer_productos div .footer_copyright_productos {
+    font-size: xx-small;
+  }
+}
+
+/* -------------------------- CONTACTO -------------------------- */
+/* -------------------------- CONTACTO -------------------------- */
+/* --------- Footer INDEX --------- */
+@media screen and (max-width: 400px) {
+  .contenido_contacto .needs-validation {
+    margin: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+  }
+  .footer_contactos .footer_container .footer_contacto {
     display: flex;
     flex-direction: column;
+    margin-top: 5%;
   }
-  .contenido_servicio_todos .servicio_1y2 .servicio_individual .foto_servicios img {
-    width: 50%;
+  .footer_contactos .footer_container .footer_contacto .footer_texts .titulo_contacto_contacto {
+    margin-top: 10%;
   }
-  .contenido_servicio_todos .servicio_1y2 .servicio_individual .contendio_parrafo_servicio .titulo_servicio {
-    font-size: 15px;
-    color: brown;
+  .footer_contactos .footer_container .footer_contacto .footer_texts .footer_parrafo_contacto {
+    margin-top: 10%;
   }
-  .contenido_servicio_todos .servicio_1y2 .servicio_individual .contendio_parrafo_servicio .parrafo_servicio {
-    font-size: 10px;
-  }
-  .contenido_servicio_todos .servicio_3y4 {
+  .footer_contactos .footer_container .footer_contacto .footer_texts .footer_social_contacto {
     display: flex;
-    flex-direction: column;
+    margin-left: 30px;
   }
-  .contenido_servicio_todos .servicio_3y4 .servicio_individual .foto_servicios img {
-    width: 50%;
+  .footer_contactos .footer_container .footer_contacto .footer_texts .footer_social_contacto .footer_icon_contacto {
+    margin-bottom: 3px;
   }
-  .contenido_servicio_todos .servicio_3y4 .servicio_individual .contendio_parrafo_servicio .titulo_servicio {
-    font-size: 15px;
-    color: brown;
-  }
-  .contenido_servicio_todos .servicio_3y4 .servicio_individual .contendio_parrafo_servicio .parrafo_servicio {
-    font-size: 10px;
+  .footer_contactos .footer_container .footer_copyright_contacto {
+    font-size: xx-small;
   }
 }
 
@@ -2571,13 +2583,6 @@ li a:hover {
 .contenedor_contacto {
   background-image: url(../imagenes/imagenes_index/foto_facu_fondoo.png);
   background-repeat: no-repeat;
-}
-
-.needs-validation {
-  margin: 50px;
-  margin-left: 300px;
-  margin-right: 300px;
-  margin-bottom: 50px;
 }
 
 /* ---------------------------- ERROR -------------------------------- */

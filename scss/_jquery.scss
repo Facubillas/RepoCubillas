@@ -181,52 +181,75 @@
 /* -------------------------- SERVICIO -------------------------- */
 
 @media screen and (max-width:400px){
-    .titulo_principal_servicios{
-        font-size: $textSize1;
-        color: $Color4A;
+    .footer_servicio{
+        div .footer_copyright_perfil{
+            font-size: xx-small;
+        }
     }
-    .contenido_servicio_todos{
-        display: flex;
-        flex-direction: column;
-        
-        .servicio_1y2{
-            display: flex;
-            flex-direction: column;
-            .servicio_individual{
-                .foto_servicios img{
-                    width: 50%;
-                }
-                .contendio_parrafo_servicio{
-                    // margin left: 1%;
-                    // margin-right: 1%;
-                    .titulo_servicio{
-                    font-size: $textSize0;
-                    color: brown;
-                    }
-                    .parrafo_servicio{
-                    font-size: 10px;
-                    }
+}
+
+/* -------------------------- PRODUCTOS -------------------------- */
+/* -------------------------- PRODUCTOS -------------------------- */
+
+@media screen and (max-width:400px){
+    .contenedor_productos{
+        .seccion_productos{
+            .caja_productos{
+                .caja_productos_solo{
+                display: flex;
+                flex-direction: column;
                 }
             }
         }
-        .servicio_3y4{
-            display: flex;
-            flex-direction: column;
-            .servicio_individual{
-                .foto_servicios img{
-                    width: 50%;
-                }
-                .contendio_parrafo_servicio{
-                    // margin left: 1%;
-                    // margin-right: 1%;
-                    .titulo_servicio{
-                    font-size: $textSize0;
-                    color: brown;
+    }
+
+    .footer_productos{
+        div .footer_copyright_productos{
+            font-size: xx-small;
+        }
+    }
+}
+
+/* -------------------------- CONTACTO -------------------------- */
+/* -------------------------- CONTACTO -------------------------- */
+
+/* --------- Footer INDEX --------- */
+
+@media screen and (max-width:400px){
+    .contenido_contacto{
+            .needs-validation{
+            margin: 50px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 50px;
+        }
+    }
+
+    .footer_contactos{
+        // background-color: $backGround1;
+        .footer_container{
+            .footer_contacto{
+                display: flex;
+                flex-direction: column;
+                margin-top: 5%;
+                .footer_texts{
+                    .titulo_contacto_contacto{
+                        margin-top: 10%;
                     }
-                    .parrafo_servicio{
-                    font-size: 10px;
+                    .footer_parrafo_contacto{
+                        margin-top: 10%;
+                    }
+                    .footer_social_contacto{
+                        display: flex;
+                        margin-left: 30px;
+                        .footer_icon_contacto{
+                        margin-bottom: 3px;
+                        }
                     }
                 }
+            }
+            .footer_copyright_contacto{
+                font-size: xx-small;
             }
         }
     }
